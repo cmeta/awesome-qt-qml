@@ -1,0 +1,65 @@
+工具
+
+参考https://blog.qt.io/cn/2018/12/03/modern-qt-development-top-10-tools-using/
+1、GammaRay —— 自检工具，能把Qt的框架添加到调试器中。
+
+如果您因为无休止的Qt框架内部调试而沮丧，那么一定要尝试一下这个工具。GammaRay深入理解大多数Qt核心组件，如QtQuick scene graphs、模型/视图结构、QTextDocuments、信号/槽的行为、焦点处理、GPU纹理、QWidget、状态机等，它允许您在运行时以自然的方式观察和编辑这些值。您可以以启动或附加到已运行应用程序的方式调试应用(可以调试本地或远程的应用程序)。
+
+https://www.kdab.com/development-resources/qt-tools/gammaray/
+https://www.kdab.com/gammaray-2-9-0-release/
+https://docs.kdab.com/gammaray-manual/latest/
+
+2、Clazy —— 能理解Qt语义的编译器插件
+
+这是每个Qt开发者都需要掌握的诀窍。給clang添加 Clazy插件，您将得到Qt最佳优化的编译时警告，包括未期的内存分配、API使用不当以及效率低下的构造。 Clazy 是一个提升您Qt代码质量的好方法。最重要的是，它在不需要编写任何代码的情况下为它发现的错误提供自动重构修复！
+
+https://www.kdab.com/clazy-video/
+https://www.kdab.com/clazy-results-visualizer-qt/
+https://www.kdab.com/clazy-1-2-released/
+https://github.com/KDE/clazy#setting-up-your-project-to-build-with-clazy
+
+3、HotSpot  —— 应用程序CPU性能的可视化工具
+
+在优化方面，什么也比不上分析器。但是读取原始的性能日志是一种熬煎，只适合于那些认为zip包是一种正确管理源代码方式的人们。HotSpot读取Linux性能日志，并让您看到多个不同的视图(调用者、时间线、自上而下、自下而上)，以帮助您轻松地了解您正在消耗时间的位置。
+
+https://www.kdab.com/hotspot-video/
+https://www.kdab.com/hotspot-v1-1-0-adds-timeline-recording-features/
+
+4、apitrace  —— 调试图形API并提高其性能的一组工具
+
+如果您正在编写GUI应用程序，那么分析器不会在C++代码中停下来。您需要一种方法来查看您对OpenGL、Direct3D或DirectDraw的调用，以图形方式查看这些调用的内容，并分析它们的性能。这就是 apitrace 的功能。它还可以重播一个记录文件，允许您在看到需要改进的地方之后对性能进行比较和基准测试。
+
+出
+
+5、Heaptrack  —— 查看应用程序内存使用情况的工具
+
+有时候优化不是速度问题，而是内存问题。如果您想分析一下应用程序的内存使用情况，您会想看看这个。通过显示应用程序的峰值内存使用量、内存泄漏的函数、最大的内存分配者和极大多数临时分配的内存，您将能够真正精准定位应用程序内存的使用情况，并研究如何最小化其内存消耗。
+
+https://www.kdab.com/heaptrack-v1-1-0-release/
+
+6、持续集成 (CI) —— 敏捷开发的构建系统
+
+无论您是否使用敏捷开发，持续集成系统和单元测试精密配合作为一种手段，都可以实实在在地提高您的软件质量。不要费心地从头开始创建您的CI构建系统，因为有很多好用的工具可以助您发布软件的质量更上一层楼。
+
+http://buildbot.net/
+http://cruisecontrol.sourceforge.net/
+https://jenkins.io/
+7、Qt Design Studio —— UI开发的新时代
+Qt Design Studio是一款UI设计和开发工具，它让设计师和开发者可以迅速设计原型，并且开发复杂的可伸缩的UI。
+Qt Design Studio的详细特性：
+
+Qt Photoshop Bridge —— 在Photoshop中创建您的UI设计和UI组件，然后把它们导入到Qt Design Studio中。这包含一个先进的Photoshop插件，它能把您的设计翻译成QML语言，并导入到Qt Design Studio中。
+基于时间轴的动画 —— 创建高级动画从来都不是容易的事情。基于时间轴/关键帧的编辑器，它能让设计师为各种类型元素创造每个像素都完美的动画，而不需要写任何一行代码。
+QMLLive Preview —— 在桌面、Android设备、Boot2Qt设备上直接运行和预览您的应用。实时地在目标设备上检查您修改的效果。
+QML Visual Effects  —— 在您的设计上直接应用开箱即用的可视效果。例如：模糊、上色、发光或更多。您甚至可以在时间轴编辑器中添加可视效果动画。
+QML Shape Items —— 许多个开箱即用的形状，例如：扇形，弧线、三角形等，随时可以帮助设计原型和创建定制的QML可视效果。
+管理和创建定制的、可复用的元件 —— 只需几次鼠标点击一可以把Photoshop的图层变成可以被不同项目复用的元件。
+还有许多， 例如：简单的图层和状态管理。
+
+博客
+1、https://blog.qt.io/cn/
+
+Qt未来
+1、Qt Lite project
+2、Qt for automation 
+3、Qt docker
